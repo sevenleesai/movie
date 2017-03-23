@@ -18,7 +18,7 @@
         <tr>
           <td> # </td>
           <td> <%= link_to(group.movie, group_path(group)) %> </td>
-          <td> <%= group.review %> </td>
+          <td><%= render_group_review(group) %></td>
           <td> <%= group.posts.count %> </td>
           <td> <%= group.updated_at %> </td>
         </tr>

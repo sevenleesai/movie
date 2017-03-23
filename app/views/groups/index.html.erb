@@ -16,7 +16,7 @@
         <tr>
           <td>#</td>
           <td><%= link_to(group.movie, group_path(group)) %></td>
-          <td><%= simple_format(group.review) %></td>
+          <td><%= render_group_review(group) %></td>
           <td> <%= group.user.email %> </td>
           <td>
               <%= link_to("Edit", edit_group_path(group), class: "btn btn-sm btn-default")%>
